@@ -45,8 +45,7 @@ export function updateNodeStyle(nodeGfx: Container, nodeStyle: NodeStyle, textur
   const nodeCircleTexture = textureCache.get(nodeCircleTextureKey, () => {
     const graphics = new Graphics();
     graphics.beginFill(WHITE);
-    //graphics.drawCircle(nodeStyle.size, nodeStyle.size, nodeStyle.size);
-    //graphics.drawRect(nodeStyle.size, nodeStyle.size, nodeStyle.size, nodeStyle.size);
+    graphics.drawCircle(nodeStyle.size, nodeStyle.size, nodeStyle.size);
     return graphics;
   });
 
